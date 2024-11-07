@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>GRADING NILAI</h1>
+    <form id = "gradeForm">
+        <table>
+            <tr>
+                <td>
+                    <label for="tugas">tugas :</label> 
+                </td>
+                <td>
+                    <label for="UTS">UTS:</label>
+                </td>
+                <td>
+                    <label for="UAS">UAS:</label>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <input type="number" id="tugas" name="tugas" required>
+                </td>
+                <td>
+                    <input type="number" id="UTS" name="UTS" required>
+                </td>
+                <td>
+                    <input type="number" id="UAS" name="UAS" required>
+                </td>
+            </tr>
+        </table>
+        <button type="button" onclick="calculateGrade()" style="width: 60px; height: 30px; margin-top: 10px;"> Hitung </button>
+    </form>
+    <h3 id = "result"></h3>
+    <script src="scrip.js"></script>
+</body>
+</html>
